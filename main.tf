@@ -41,11 +41,6 @@ resource "aws_instance" "web_server" {
     Name = "${var.environment}-web-server"
   }
 
-(*   # Local-exec provisioner (runs on the machine applying the Terraform)
-  provisioner "local-exec" {
-    command = "echo 'EC2 instance ${self.id} created with IP: ${self.public_ip}' > instance_info.txt"
-  } *)
-
   # File provisioner (copy files from local to remote)
   provisioner "file" {
     source      = "${path.module}/files/index.html"

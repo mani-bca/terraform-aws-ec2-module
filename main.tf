@@ -1,4 +1,3 @@
-# EC2 Module - main.tf
 
 # Create a security group for the EC2 instance
 resource "aws_security_group" "web_server_sg" {

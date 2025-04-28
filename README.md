@@ -1,1 +1,1 @@
-# terraform-aws-ec2-module
+# terraform-aws-ec2-modules
